@@ -255,7 +255,7 @@ body * {
     margin-top: -320px;
 }
 
-.content_2-header__title {
+.content_2__title {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -269,34 +269,34 @@ body * {
     color: #FFFFFF;
 }
 
-.content_2-header__logo {
-    margin-top: 10px;
+.content_2__logo {
+    margin-top: 13px;
     display: flex;
     justify-content: center;
     margin-bottom: 28px;
 }
 
-.content_2-header__image {
+.content_2__image {
     position: relative;
     width: 817px;
     height: 434px;
 }
 
-.content_2-header__play {
+.content_2__play {
     display: flex;
     justify-content: center;
 }
 
-.content_2-header__play-image{
+.content_2__play-image{
     margin-top: -436px;
     z-index: 99;
 }
 
-.content_2-header__image_darkened {
+.content_2__image_darkened {
     position: relative;
 }
    
-.content_2-header__image_darkened::before {
+.content_2__image_darkened::before {
     content: '';
     position: absolute;
     top: 0;
@@ -307,13 +307,13 @@ body * {
     z-index: 1;
 }
 
-.content_2-header__dash {
+.content_2__dash {
     margin-top: 62px;
     display: flex;
     justify-content: center;
 }
 
-.content_2-header__text {
+.content_2__text {
     margin: 0;
     margin-top: 34px;
     font-family: 'Nunito Sans';
@@ -325,17 +325,17 @@ body * {
     color: #363636;
 }
 
-.content_2-header-input{
+.content_2-input{
     display: flex;
     justify-content: center;
     margin-top: 93px;
 }
 
-.content_2-header-input-sidebar{
+.content_2-input-sidebar{
     margin-right: 80px;
 }
 
-.content_2-header-input__input {
+.content_2-input__input {
     margin: 0;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -358,7 +358,7 @@ body * {
     width: 230px;
 }
 
-.content_2-header-input__button {
+.content_2-input__button {
     margin-left: 50px;
     font-style: normal;
     font-weight: normal;
@@ -368,55 +368,74 @@ body * {
     height: 51px;
 }
 
-.content_2-header__checkbox{
+.content_2__checkbox{
+    display: flex;
+    justify-content: center;
     position: relative;
+    margin-top: 35px;
 }
 
-.checkbox__input {
-    -webkit-appearance: none;
-    appearance: none;
-    position: absolute;
+input[type="checkbox"] {
+    display: none;
 }
 
-.checkbox__label{
-    padding-left: 25px;
-    font-size: 1rem;
-    color: blue;
-}
+label {
+    padding-left: 20px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 163.68%;
+  }
 
-.checkbox__label::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    border: 1px solid;
+  label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-right: 10px;
+    border-radius: 1px;
     background-color: #E3B873;
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    content: '';
+    background-size: 100%;
+    background-image: url(../images/correct.svg);
+  }
+
+.content_3__title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 75px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;   
+    color: #181818;
 }
 
-.checkbox__label::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: url("images/Vector1.svg");
-    background-size: 18px 18px;
-    opacity: 0;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: 2;
+.content_3__logo {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
 }
 
-.checkbox__input:checked + .checkbox__label::before {
-    background-color: chartreuse;
-    border-color: rgb(87, 146, 27);
+.content_3-body__image {
+    width: 392px;
+    height: 421px;
 }
 
-.checkbox__input:checked + .checkbox__label::after {
-    opacity: 1;
+.content_3-body__text {
+    justify-content: center;
+    max-width: 392px;
+    margin-top: -124px;
+    background-color: white;
 }
