@@ -583,7 +583,7 @@ input[type="checkbox"] {
     color: #FFFFFF;
   }
 
-  .content_4__checkbox{
+.content_4__checkbox{
     margin-left: 58px;
     margin-top: -33px;
   }
@@ -710,6 +710,7 @@ input[type="checkbox"] {
 }
 
 .content_5_content__item:first-child {
+    max-width: 149px;
     padding-top: 47px;
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
@@ -832,4 +833,115 @@ input[type="checkbox"] {
     height: 54px;
     margin-left: 14px;
     margin-right: 17px;
+}
+
+.content_7 {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/house_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-top: 92px;
+}
+
+.content_7__form {
+    margin-top: 50px;
+    width: 883px;
+    height: 445px;
+    background-color: #181818;
+    display: inline-block;
+    justify-content: center;
+    max-width: 883px;
+}
+
+.content_7__form__title {
+    margin-top: 34px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+}
+
+.content_7__form__input {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.content_7__input {
+    width: 231px;
+}
+
+.content_7__input_question {
+    width: 516px;
+}
+
+.content_7__checkbox{
+    margin-top: 0;
+    margin-left: 45px;
+}
+
+.content_7__button {
+    margin-top: 50px;
+    margin-left: 40%;
+    padding: 10px 70px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;   
+    color: #FFFFFF;
+}
+
+.content_8 {
+    margin-top: -220px;
+    background-image: url(../images/city.jpg);
+    height: 954px;
+    z-index: -2;
+}
+
+.content_8__address {
+    display: flex;
+    justify-content: center;
+    padding-top: 280px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;   
+    color: #E3B873;
+}
+
+.content_8__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.content_8__links__img {
+    margin-right: 15px;
+    padding: 6px;
+    background: #E3B873;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%
+}
+
+.content_8__map {
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
+}
+
+.footer {
+    height: 133px;
 }
