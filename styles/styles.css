@@ -1,10 +1,19 @@
 body {
     margin: 0;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.text {
+    margin: 0;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
 }
 
 body * {
@@ -32,13 +41,6 @@ body * {
     line-height: 15px;
 }
 
-.telefon {
-    text-align: right;
-    text-decoration-line: underline;
-    color: #E3B873;
-    margin-right: 45px;
-}
-
 .header {
     background-color: black;
 }
@@ -51,6 +53,8 @@ body * {
 }
 
 .logo {
+    font-size: 11px;
+    line-height: 15px;
     text-transform: uppercase;
     color: #E3B873;
 }
@@ -61,6 +65,8 @@ body * {
 }
 
 .header-navigation__item {
+    font-size: 11px;
+    line-height: 15px;
     margin-right: 47px;
     color: #FFFFFF;
     text-decoration: none;
@@ -73,6 +79,15 @@ body * {
 
 .header-navigation__item a:hover {
     color: #E3B873;
+}
+
+.telefon {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #E3B873;
+    margin-right: 45px;
 }
 
 .hero {
@@ -93,8 +108,6 @@ body * {
 }
 
 .title_1 {
-    margin: 0;
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;    
@@ -106,11 +119,11 @@ body * {
 }
 
 .text_1 {
+    margin-top: 20px;
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
     max-width: 504px;
-    ;
 }
 
 .hero-container {
@@ -125,11 +138,12 @@ body * {
 }
 
 .hero__button_one {
+    margin-top: 40px;
     padding: 20px 42px;
-    background: #E3B873;
 }
 
 .hero__button_two {
+    margin-top: 40px;
     padding: 20px 22px;
     background: rgba(0, 0, 0, 0);
     border: 1px solid #FFFFFF;
@@ -143,11 +157,7 @@ body * {
 }
 
 .title_2 {
-    margin: 0;
     padding-top: 53px;
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
@@ -159,9 +169,6 @@ body * {
 .text_2 {
     margin-top: 34px;
     margin-right: 50px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
@@ -178,9 +185,6 @@ body * {
 .content-items__item {
     padding-top: 99px;
     margin-right: 60px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -202,14 +206,10 @@ body * {
 
 .content-aside_content {
     margin-bottom: 34px;
-    margin-right: 54px;
+    margin-right: 64px;
 }
 
 .content-aside__title {
-    margin: 0;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -217,9 +217,6 @@ body * {
 }
 
 .content-aside__text {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
@@ -256,12 +253,8 @@ body * {
 }
 
 .content_2__title {
-    margin: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -314,11 +307,7 @@ body * {
 }
 
 .content_2__text {
-    margin: 0;
     margin-top: 34px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 37px;
     text-align: center;   
@@ -336,10 +325,6 @@ body * {
 }
 
 .input__input {
-    margin: 0;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
@@ -385,9 +370,6 @@ input[type="checkbox"] {
 
 .content_2__label {
     padding-left: 20px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 163.68%;
   }
@@ -413,11 +395,7 @@ input[type="checkbox"] {
 .content_3__title {
     display: flex;
     justify-content: center;
-    margin: 0;
     margin-top: 75px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -458,21 +436,13 @@ input[type="checkbox"] {
 }
 
 .content_3-body__text_title {
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;   
     color: #363636;
-    margin: 0;
     padding: 25px 34px 12px;
 }
 
 .content_3-body__text_aside {
-    margin: 0;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 27px;  
     color: #959595;
@@ -485,8 +455,6 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;   
-    color: #FFFFFF;
     padding: 17px 21px;
     margin-left: 30px;
     background-color: #E3B873;
@@ -515,11 +483,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
     padding: 20px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     text-align: center;  
@@ -533,9 +497,6 @@ input[type="checkbox"] {
 }
 
 .content_4__list_item_text {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;    
     color: #363636;
@@ -555,9 +516,7 @@ input[type="checkbox"] {
 }
 
 .content_4__form_title {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
+    margin-top: 28px;
     font-size: 18px;
     line-height: 26px;
     text-align: center;   
@@ -589,9 +548,6 @@ input[type="checkbox"] {
   }
 
 .content_4__label {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 163.68%;
     color: #FFFFFF;
@@ -616,16 +572,8 @@ input[type="checkbox"] {
 }
 
 .content_4__button {
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;   
-    color: #FFFFFF;
+    line-height: 21px; 
     padding: 18px 44px;
     margin-top: 39px;
     margin-left: 244px;
@@ -646,9 +594,6 @@ input[type="checkbox"] {
 
 .content_4-pig__text {
     margin-left: 10px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 26px;    
     color: #E3B873;   
@@ -689,9 +634,6 @@ input[type="checkbox"] {
 
 .content_5_content__title {
     padding-top: 137px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 27px;
     line-height: 37px;
     text-transform: uppercase;    
@@ -700,10 +642,7 @@ input[type="checkbox"] {
 
 .content_5_content__item {
     margin-left: -40px;
-    padding-top: 13px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
+    padding-top: 15px;
     font-size: 20px;
     line-height: 38px;  
     color: #FFFFFF;
@@ -711,7 +650,7 @@ input[type="checkbox"] {
 
 .content_5_content__item:first-child {
     max-width: 149px;
-    padding-top: 47px;
+    padding-top: 30px;
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
 }
@@ -745,9 +684,6 @@ input[type="checkbox"] {
 .content_6_header__title {
     display: flex;
     justify-content: center;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -767,9 +703,6 @@ input[type="checkbox"] {
 .content_6_header__text {
     display: flex;
     justify-content: center;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -789,9 +722,6 @@ input[type="checkbox"] {
 
 .content_6_body_name{
     margin-left: 23px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 23px;   
     color: #181818;
@@ -800,11 +730,9 @@ input[type="checkbox"] {
 }
 
 .content_6_body_text {
+    margin-top: 22px;
     margin-left: 20px;
     max-width: 324px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 180%;
     color: #959595;
@@ -819,10 +747,8 @@ input[type="checkbox"] {
 }
 
 .content_6_body_meta__text {
+    margin-top: 15px;
     margin-left: 15px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 17px;
     line-height: 24px;   
     color: #FFFFFF;
@@ -856,9 +782,6 @@ input[type="checkbox"] {
 
 .content_7__form__title {
     margin-top: 34px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
@@ -890,14 +813,8 @@ input[type="checkbox"] {
     margin-top: 50px;
     margin-left: 40%;
     padding: 10px 70px;
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
-    line-height: 27px;
-    text-align: center;
-    text-transform: uppercase;   
-    color: #FFFFFF;
+    line-height: 27px; 
 }
 
 .content_8 {
@@ -911,9 +828,6 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     padding-top: 280px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
