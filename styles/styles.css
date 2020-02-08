@@ -859,3 +859,22 @@ input[type="checkbox"] {
 .footer {
     height: 133px;
 }
+
+@media screen and (max-width: 1300px) {
+    .none {
+      display: none;
+    }
+
+    .logo {
+        margin-left: 18px;
+    }
+
+    .telefon {
+        margin-right: 18px;
+    }
+
+    .content_3-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
