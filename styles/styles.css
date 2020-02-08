@@ -873,6 +873,11 @@ input[type="checkbox"] {
         margin-right: 18px;
     }
 
+    .hero {
+        display: flex;
+        justify-content: center;
+    }
+
     .content_3-body {
         flex-wrap: wrap;
         justify-content: center;
