@@ -445,9 +445,6 @@ input[type="checkbox"] {
     height: 286px;
     background-color: white;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .col-repair__title {
@@ -998,13 +995,17 @@ input[type="checkbox"] {
     }
 
     .control_darkened {
-        transform:  scale(0.43);
         margin-top: -100px;
         display: flex;
         justify-content: center;
     }
 
+    .control__image {
+        transform:  scale(0.43);
+    }
+
     .control_darkened::before {
+        display: none;
         z-index: -1;
     }
 
