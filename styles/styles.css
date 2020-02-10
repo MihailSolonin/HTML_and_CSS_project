@@ -873,7 +873,7 @@ input[type="checkbox"] {
     .container {
         margin-left: 20px;
         margin-right: 20px;
-        max-width: 400px;
+        max-width: 375px;
     }
 
     .header__telefon {
@@ -906,11 +906,11 @@ input[type="checkbox"] {
     }
 
     .hero__button-one {
-        padding: 19px 107px;
+        padding: 19px 100px;
     }
 
     .hero__button-two {
-        padding: 19px 130px ;
+        padding: 19px 122px ;
     }
 
     .projects {
@@ -1052,7 +1052,7 @@ input[type="checkbox"] {
         color: #FFFFFF;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
         background-color: #131313;
-        width: 340px;
+        width: 320px;
     }
 
     .input::placeholder {
