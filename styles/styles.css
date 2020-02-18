@@ -58,6 +58,7 @@ body * {
     border: 0;
     font-size: 11px;
     line-height: 15px;
+    cursor: pointer;
 }
 
 .header {
@@ -163,7 +164,7 @@ body * {
 
 .hero__button:hover {
     background: #E3B873;
-    border: 0;
+    border-color: transparent;
 }
 
 .hero__button-one {
@@ -201,7 +202,7 @@ body * {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.projects__items-item:first-child {
+.projects__items-item:hover {
     color: #E3B873;
     border-bottom: 1px #E3B873 solid ;
 }
@@ -442,7 +443,7 @@ input[type="checkbox"] {
     margin-top: -124px;
     margin-left: 30px;
     width: 330px;
-    height: 286px;
+    height: 293px;
     background-color: white;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
@@ -461,16 +462,23 @@ input[type="checkbox"] {
 }
 
 .col-repair__price {
+    margin-top: -28px;
     position: relative;
+    width: 228px;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    padding: 17px 21px;
     margin-left: 30px;
     background-color: #E3B873;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 17px 15px;
+    outline: 0;
+    border: 0;
 }
 
 .request {
@@ -601,7 +609,6 @@ input[type="checkbox"] {
     background-size: cover;
     position: relative;
     margin-top: 242px;
-    z-index: -99;
 }
 
 .image_darkened_two {
@@ -616,7 +623,7 @@ input[type="checkbox"] {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.8);  
-    z-index: -1;
+    z-index: 1;
 }
 
 .fantasies__body {
@@ -625,6 +632,7 @@ input[type="checkbox"] {
 
 .fantasies__content {
     position: absolute;
+    z-index: 33;
 }
 
 .fantasies__title {
@@ -643,9 +651,8 @@ input[type="checkbox"] {
     color: #FFFFFF;
 }
 
-.fantasies__item:first-child {
-    max-width: 149px;
-    padding-top: 30px;
+.fantasies__item:hover {
+    width: 180px;
     color: #E3B873;
     border-bottom: 1px #E3B873 solid;
 }
@@ -654,12 +661,15 @@ input[type="checkbox"] {
     list-style: none; 
 }
 
+
 .fantasies__block-one {
     margin-left: 510px;
+    z-index: 33;
 }
 
 .fantasies__block-two {
     margin-left: 40px;
+    z-index: 33;
 }
 
 .block-one__image {
@@ -818,6 +828,21 @@ input[type="checkbox"] {
     line-height: 27px; 
 }
 
+.image_darkened_three {
+    position: relative;
+}
+   
+.image_darkened_three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);  
+    z-index: -1;
+}
+
 .address {
     margin-top: -220px;
     background-image: url(../images/address/city.jpg);
@@ -936,6 +961,7 @@ input[type="checkbox"] {
     .projects__media-img {
         display: flex;
         justify-content: center;
+        margin-top: -40px;
     }
 
     .media-img__image {
@@ -1123,7 +1149,7 @@ input[type="checkbox"] {
 
     .questions {
         background: #181818;
-        margin: 0;
+        margin-top: -30px;
     }
 
     .questions__form {
@@ -1132,7 +1158,7 @@ input[type="checkbox"] {
     }
 
     .questions__title {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .form-request__lable {
@@ -1167,6 +1193,7 @@ input[type="checkbox"] {
 
     .address__media {
         display: block;
+
     }
 
     .address__title {
@@ -1175,5 +1202,25 @@ input[type="checkbox"] {
 
     .address__links {
         padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px){
+        .container {
+            margin-left: 20px;
+            margin-right: 20px;
+            max-width: 1299px;
+        }
+
+        .projects__text {
+            max-width: 442px;
+        }
+
+        .questions__content {
+            max-width: 520px;
+        }
+
+        .questions__button {
+            margin-left: 100px;
+        }
     }
 }
