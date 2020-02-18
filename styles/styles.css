@@ -1208,7 +1208,7 @@ input[type="checkbox"] {
         .container {
             margin-left: 20px;
             margin-right: 20px;
-            max-width: 1299px;
+            max-width: 768px;
         }
 
         .projects__text {
@@ -1221,6 +1221,12 @@ input[type="checkbox"] {
 
         .questions__button {
             margin-left: 100px;
+        }
+
+        @media screen and (min-width: 1024px){
+            .container {
+                max-width: 1024px;
+            }
         }
     }
 }
