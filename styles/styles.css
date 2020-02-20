@@ -200,11 +200,13 @@ body * {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px transparent solid ;
+    cursor: pointer;
 }
 
 .projects__items-item:hover {
     color: #E3B873;
-    border-bottom: 1px #E3B873 solid ;
+    border-bottom-color: #E3B873 ;
 }
 
 .projects__image {
@@ -388,6 +390,7 @@ input[type="checkbox"] {
     padding-left: 20px;
     font-size: 14px;
     line-height: 163.68%;
+    cursor: pointer;
   }
 
 .checkbox-label::before {
@@ -649,12 +652,14 @@ input[type="checkbox"] {
     font-size: 20px;
     line-height: 38px;  
     color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
 }
 
 .fantasies__item:hover {
     width: 180px;
     color: #E3B873;
-    border-bottom: 1px #E3B873 solid;
+    border-bottom-color: #E3B873 ;
 }
 
 .fantasies__list {
@@ -784,11 +789,13 @@ input[type="checkbox"] {
 }
 
 .questions__form {
+    position: relative;
     margin-top: 50px;
     width: 883px;
     height: 445px;
     background-color: #181818;
     display: inline-block;
+    z-index: 53;
 }
 
 .questions__title {
@@ -840,14 +847,18 @@ input[type="checkbox"] {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.8);  
-    z-index: -1;
+    z-index: 1;
 }
 
 .address {
     margin-top: -220px;
     background-image: url(../images/address/city.jpg);
     height: 954px;
-    z-index: -2;
+}
+
+.address__media {
+    position: relative;
+    z-index: 33;
 }
 
 .media__map {
@@ -1148,13 +1159,14 @@ input[type="checkbox"] {
     }
 
     .questions {
-        background: #181818;
         margin-top: -30px;
+        background: #000000;
     }
 
     .questions__form {
         width: auto;
         height: auto;
+        background-color: transparent;
     }
 
     .questions__title {
