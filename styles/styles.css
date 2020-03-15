@@ -998,11 +998,13 @@ input[type="checkbox"] {
     }
 
     .media-img__image {
+        width: 335px;
+        height: 241px;
         margin-top: 70px;
         position: absolute;
     }
 
-    .media-img__arrow_left {
+    #media-img__arrow_left {
         margin-right: 250px;
     }
 
@@ -1014,6 +1016,7 @@ input[type="checkbox"] {
         width: 40px;
         height: 40px;
         z-index: 1;
+        cursor: pointer;
     }
 
     .projects__media-aside {
