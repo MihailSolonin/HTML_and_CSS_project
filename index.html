@@ -44,12 +44,16 @@
         </section>
         <section class="projects">
             <div class="container">
-                <ul class="none projects__items">
-                    <li class="title projects__items-item">Rostov-on-Don, Admiral</li>
+                <ul class="none projects__items" id="link_area">
+                    <li class="title projects__items-item projects__items-item-active">Rostov-on-Don, Admiral</li>
                     <li class="title projects__items-item">Sochi Thieves</li>
                     <li class="title projects__items-item">Rostov-on-Don Patriotic</li>
                 </ul>
-                <img src="./images/projects/image.jpg" alt="interior" class="none projects__image">
+                <div class="img-container">
+                    <img src="./images/projects/image.jpg" alt="interior" class="none projects__image">
+                    <img src="./images/projects/image 2.jpg" alt="interior" class="none projects__image">
+                    <img src="./images/projects/image 3.jpg" alt="interior" class="none projects__image">
+                </div>
                 <h1 class="title projects__title">
                     Completed <br>projects
                 </h1>
@@ -67,25 +71,49 @@
                             <h2 class="title col-projects__title">
                                 City:
                             </h2>
-                            <p class="text col-projects__text">
-                                Rostov-on-Don <br>LCD admiral
-                            </p>
+                            <div>
+                                <p class="text col-projects__text city">
+                                    Rostov-on-Don <br>LCD admiral
+                                </p>
+                                <p class="text col-projects__text city">
+                                    Sochi <br>Thieves
+                                </p>
+                                <p class="text col-projects__text city">
+                                    Rostov-on-Don <br>Patriotic
+                                </p>
+                            </div>
                         </div>
                         <div class="col-projects">
                             <h2 class="title col-projects__title">
                                 Repair time:
                             </h2>
-                            <p class="text col-projects__text">
-                                3.5 months<br><br>
-                            </p>
+                            <div>
+                                <p class="text col-projects__text repair_time">
+                                    3.5 months<br><br>
+                                </p>
+                                <p class="text col-projects__text repair_time">
+                                    4 months<br><br>
+                                </p>
+                                <p class="text col-projects__text repair_time">
+                                    3 months<br><br>
+                                </p>
+                            </div>
                         </div>
                         <div class="col-projects">
                             <h2 class="title col-projects__title">
                                 apartment area:
                             </h2>
-                            <p class="text col-projects__text">
-                                81 m2<br><br>
-                            </p>
+                            <div>
+                                <p class="text col-projects__text apartment_area">
+                                    81 m2<br><br>
+                                </p>
+                                <p class="text col-projects__text apartment_area">
+                                    105 m2<br><br>
+                                </p>
+                                <p class="text col-projects__text apartment_area">
+                                    93 m2<br><br>
+                                </p>
+                            </div>
                         </div>
                         <div class="col-projects">
                             <h2 class="title col-projects__title">
@@ -98,13 +126,16 @@
                     </div>
                 </div>
                 <div class="none projects__arrow">
-                    <img src="./images/projects/Group.svg" alt="влево" class="projects__arrow-left">
-                    <img src="./images/projects/Rectangle 7.4.svg" class="projects__arrow-point">
-                    <img src="./images/projects/Rectangle 7.3.svg" class="projects__arrow-point">
-                    <img src="./images/projects/Rectangle 7.3.svg">
-                    <img src="./images/projects/Group.svg" alt="вправо" class="projects__arrow-right">
+                    <img src="./images/projects/Group.svg" alt="влево" id="projects__arrow-left">
+                    <div id="dots-block">
+                        <button class="projects__arrow-point dot dot-active">
+                        <button class="projects__arrow-point dot">
+                        <button class="dot">
+                    </div>
+                    <img src="./images/projects/Group.svg" alt="вправо" id="projects__arrow-right">
                 </div>
             </div>
+            <script src="slider.js"></script>
         </section>
         <section class="control">
             <div class="container">
