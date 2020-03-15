@@ -5,33 +5,40 @@ let dots = document.getElementsByClassName('dot'),
 	slides = document.getElementsByClassName('projects__image'),
 	city = document.getElementsByClassName('city'),
 	repairTime = document.getElementsByClassName('repair_time'),
-	apartmentArea = document.getElementsByClassName('apartment_area'),
+    apartmentArea = document.getElementsByClassName('apartment_area'),
+    mediaSlides = document.getElementsByClassName('media-img__image'),
     prev = document.getElementById('projects__arrow-left'),
     next = document.getElementById('projects__arrow-right'),
-	slideIndex = 1;
+    mediaPrev = document.getElementById('media-img__arrow_left'),
+    mediaNext = document.getElementById('media-img__arrow_right'),
+    slideIndex = 1;
+    mediaSlidesIndex = 1;
 	cityIndex = 1;
 	repairTimeIndex = 1;
 	apartmentAreaIndex = 1;
 
-showSlides(slideIndex,cityIndex,repairTimeIndex,apartmentAreaIndex);
+showSlides(slideIndex,cityIndex,repairTimeIndex,apartmentAreaIndex,mediaSlidesIndex);
 
 function showSlides (n) {
     if (n < 1) {
 		slideIndex = slides.length;
 		cityIndex = city.length;
 		repairTimeIndex = repairTime.length;
-		apartmentAreaIndex = apartmentArea.length;
+        apartmentAreaIndex = apartmentArea.length;
+        mediaSlidesIndex = mediaSlides.length;
     } else if (n > slides.length) {
 		slideIndex = 1;
 		cityIndex = 1;
 		repairTimeIndex = 1;
-		apartmentAreaIndex = 1;
+        apartmentAreaIndex = 1;
+        mediaSlidesIndex = 1;
     }
     for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = 'none';
 		city[i].style.display = 'none';
 		repairTime[i].style.display = 'none';
-		apartmentArea[i].style.display = 'none';
+        apartmentArea[i].style.display = 'none';
+        mediaSlides[i].style.display = 'none';
     }
     for (let i = 0; i < dots.length; i++) {
 		dots[i].classList.remove('dot-active');
@@ -40,22 +47,29 @@ function showSlides (n) {
 	slides[slideIndex - 1].style.display = 'block';
 	city[cityIndex - 1].style.display = 'block';
 	repairTime[repairTimeIndex - 1].style.display = 'block';
-	apartmentArea[apartmentAreaIndex - 1].style.display = 'block';
+    apartmentArea[apartmentAreaIndex - 1].style.display = 'block';
+    mediaSlides[mediaSlidesIndex - 1].style.display = 'block';
 	dots[slideIndex - 1].classList.add('dot-active');
-	link[slideIndex - 1].classList.add('projects__items-item-active');
+    link[slideIndex - 1].classList.add('projects__items-item-active');
 }
 
 function plusSlides (n) {
-	showSlides(slideIndex += n, cityIndex += n, repairTimeIndex += n, apartmentAreaIndex += n);
+	showSlides(slideIndex += n, cityIndex += n, repairTimeIndex += n, apartmentAreaIndex += n, mediaSlidesIndex += n);
 }
 function currentSlide (n) {
-    showSlides(slideIndex = n, cityIndex = n, repairTimeIndex = n, apartmentAreaIndex = n)
+    showSlides(slideIndex = n, cityIndex = n, repairTimeIndex = n, apartmentAreaIndex = n, mediaSlidesIndex = n)
 }
 
 prev.onclick = function () {
     plusSlides(-1);
 }
 next.onclick = function () {
+    plusSlides(1);
+}
+mediaPrev.onclick = function () {
+    plusSlides(-1);
+}
+mediaNext.onclick = function () {
     plusSlides(1);
 }
 dotsArea.onclick = function (e) {
