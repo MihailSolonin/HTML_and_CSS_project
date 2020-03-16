@@ -25,7 +25,7 @@ function showSlides (n) {
 		cityIndex = city.length;
 		repairTimeIndex = repairTime.length;
         apartmentAreaIndex = apartmentArea.length;
-        mediaSlidesIndex = mediaSlides.length;
+        mediaSlidesIndex = mediaSlides.length - 1;
     } else if (n > slides.length) {
 		slideIndex = 1;
 		cityIndex = 1;
@@ -57,7 +57,7 @@ function plusSlides (n) {
 	showSlides(slideIndex += n, cityIndex += n, repairTimeIndex += n, apartmentAreaIndex += n, mediaSlidesIndex += n);
 }
 function currentSlide (n) {
-    showSlides(slideIndex = n, cityIndex = n, repairTimeIndex = n, apartmentAreaIndex = n, mediaSlidesIndex = n)
+    showSlides(slideIndex = n, cityIndex = n, repairTimeIndex = n, apartmentAreaIndex = n, mediaSlidesIndex = n);
 }
 
 prev.onclick = function () {
