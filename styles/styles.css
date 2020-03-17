@@ -1064,7 +1064,7 @@ input[type="checkbox"] {
     }
 
     .control__image {
-        transform:  scale(0.43);
+        transform:  scale(0.45);
     }
 
     .control_darkened::before {
