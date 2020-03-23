@@ -1209,10 +1209,12 @@ input[type="checkbox"] {
 
     .questions__input {
         margin-left: 20px;
+        background-color: #000000;
     }
 
     .questions__input-question {
         margin-left: 20px;
+        background-color: #000000;
     }
 
     .questions__button {
