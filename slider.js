@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let dots = document.getElementsByClassName('dot'),
 	dotsArea = document.getElementById('dots-block'),
 	link = document.getElementsByClassName('projects__items-item'),
@@ -86,3 +87,5 @@ linkArea.onclick = function (e) {
         }
     }
 }
+=======
+>>>>>>> parent of 86236eb... added slider
