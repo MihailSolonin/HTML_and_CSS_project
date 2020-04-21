@@ -218,7 +218,7 @@ body * {
     margin-top: 45px;
     width: 679px;
     height: 482px;
-    background-image: url(./images/projects/image.jpg);
+    background-image: url(../images/projects/image.jpg);
 }
 
 .projects__title {
