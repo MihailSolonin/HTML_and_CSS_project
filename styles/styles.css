@@ -216,6 +216,10 @@ body * {
     height: 482px;
 }
 
+.slider-img {
+    background-image: url(../images/projects/image\ 1.jpg)
+}
+
 .projects__title {
     padding-top: 53px;
     font-size: 27px;
