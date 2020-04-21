@@ -1,28 +1,23 @@
 const entities = [
     {
-      text: 'Первый кот',
       img: './images/projects/image 1.jpg'
     },
     {
-      text: 'Второй кот',
       img: './images/projects/image 2.jpg'
     },
     {
-      text: 'Третий кот',
       img: './images/projects/image 3.jpg'
     }
   ]
   
-  const text = document.querySelector('.text')
   const img = document.querySelector('.slider-img')
   
   const setEntity = (index) => {
-    text.innerText = entities[index].text
     img.style.backgroundImage = `url(${entities[index].img})`
   }
   
-  const prev = document.getElementById('slider-img__arrow_left')
-  const next = document.getElementById('.slider-img__arrow_right')
+  const prev = document.querySelector('.slider-img__arrow_left')
+  const next = document.querySelector('.slider-img__arrow_right')
   let currentIndex = 0
   
   prev.addEventListener('click', () => {
